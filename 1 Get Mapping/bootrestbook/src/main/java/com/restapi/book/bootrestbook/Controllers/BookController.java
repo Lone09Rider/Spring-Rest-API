@@ -31,7 +31,7 @@ public class BookController {
         // book.setAuthour("KirA");
         return this.bookService.getAllBooks();
     }
-    @GetMapping("/books/id")
+    @GetMapping("/books/{id}")
     public Book getBook(@PathVariable("id") int id)
     {
         return bookService.getBookbyId(id);
